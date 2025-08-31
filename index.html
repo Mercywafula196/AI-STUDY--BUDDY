@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Study Buddy</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Study Buddy ✨</h1>
+    <p>Paste your notes below and generate 5 flashcards.</p>
+    <form id="noteForm">
+      <textarea id="notes" placeholder="Paste your notes here..." required></textarea>
+      <button type="submit" id="generateBtn">Generate Flashcards</button>
+    </form>
+    <div id="status" class="status"></div>
+    <div id="flashcards" class="grid"></div>
+    <hr/>
+    <button id="loadSavedBtn" class="secondary">Load Saved Flashcards</button>
+    <div id="saved" class="grid"></div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
